@@ -1,0 +1,22 @@
+### use balance (500번 오류 발생)
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "accountNumber": "1000000000",
+  "amount": 12345
+}
+
+### cancel balance
+POST http://localhost:8080/transaction/use
+Content-Type: application/json
+
+{
+  "transactionId": "",
+  "accountNumber": "1000000000",
+  "amount": 12345
+}
+
+### query transaction
+GET http://localhost:8080/transaction/{transactionId}
